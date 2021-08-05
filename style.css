@@ -1,0 +1,250 @@
+body{
+   margin: 0;
+   overflow: hidden;
+   
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+.title-bar{
+   height: 5vh;
+   /* border: 2px solid red; */
+   background-color: #107c41;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+
+.menu-bar{
+  height: 5vh;
+  /* border: 2px solid red; */
+  background-color: #107c41;
+  display: flex;
+}
+
+.menu-items{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+
+.menu-items.selected{
+    background-color: white;
+    color: #107c41;
+    
+}
+.menu-items:hover{
+    background-color: #0a6332;
+    cursor: pointer;
+}
+
+.menu-items.selected:hover{
+    background-color: white;
+    cursor: default;
+}
+
+.menu-icon-bar{
+    height: 6vh;
+    background-color: rgb(240, 235, 235);
+    display: flex;
+    align-items: center;
+    
+   
+    
+    /* border: 2px solid red; */
+}
+
+.menu-icon{
+   
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+  
+    display: flex;
+    align-items: center;
+    
+    height: 100%;
+    
+   
+}
+
+.menu-icon:hover{
+    background-color: lightgray;
+    cursor: pointer;
+   
+}
+
+.font-family-selector{
+    
+    width: 100px;
+    
+}
+
+.selector{
+    height: 30px;
+    font-size: 16px;
+}
+
+.formula-bar{
+   height: 5vh;
+   /* border: 2px solid red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 0.7rem;
+   padding-right: 0.7rem;
+   background-color: rgb(240, 235, 235);
+}
+
+.data-container{
+     height: 75vh;
+     /* border: 2px solid red; */
+     display: flex;
+     flex-wrap: wrap;
+    
+     
+}
+
+.select-all{
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+}
+
+.column-name-container{
+    width: calc(100vw - 30px);
+    height: 30px;
+    
+    border: 1px solid lightgray;
+    display: flex;
+    overflow: hidden;
+}
+
+.row-name-container{
+    
+    width: 30px;
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.input-cell-container{
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border: 1px solid lightgray;
+    overflow: scroll;
+}
+
+.sheet-bar{
+    height: 4vh;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.left-arrow:hover,.right-arrow:hover{
+     background-color: gray;
+     cursor: pointer;
+}
+
+
+
+.add-sheet{
+    color: #107c41;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.add-sheet:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sheet-tab{
+    border-bottom: 5px solid #107c41;
+}
+
+.sheet-tab-container{
+    border: 1px solid lightgray;
+    display: flex;
+  
+}
+
+.column-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    border-right: 1px solid lightgrey;
+}
+
+.row-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 25px;
+    border-bottom:1px solid  lightgrey;
+}
+
+.row-cell{
+    display: flex;
+}
+
+.input-cell{
+    min-width: 100px;
+    min-height: 25px;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    /* outline-color: #107c41; */
+}
+
+.input-cell.selected{
+    border: 2px solid #107c41;
+}
+
+.selected-cell{
+    height: 70%;
+    width: 120px;
+    border: 1px solid lightgray;
+}
+
+.formula-editor{
+   padding-left: 0.7rem;
+   padding-right: 0.7rem;
+   display: flex;
+   outline-color: #107c41;
+   background-color: white;
+
+   display: flex;
+   /* align-items: center;
+   justify-content: center; */
+}
+
+.function-sign{
+    height: 70%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formula-input{
+    width: calc(100vw - 160px);
+    height: 70%;
+    border: 1px solid lightgray;
+}
+
+.menu-icon.selected{
+    background-color: lightgray;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Excel-clone</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">Book1-Excel</div>
+        <div class="menu-bar">
+            <div class="menu-file menu-items">File</div>
+            <div class="menu-home menu-items selected">Home</div>
+            <div class="menu-insert menu-items">Insert</div>
+            <div class="menu-layout menu-items">Page Layout</div>
+            <!-- <div class="menu-file">Formulas</div>
+            <div class="menu-file">Data</div>
+            <div class="menu-file">Review</div>
+            <div class="menu-file">View</div> -->
+            <div class="menu-help menu-items">Help</div>
+        </div>
+
+        <div class="menu-icon-bar">
+            <div class="material-icons menu-icon icon-cut">content_cut</div>
+            <div class="material-icons menu-icon icon-copy">content_copy</div>
+            <div class="material-icons menu-icon icon-paste">content_paste</div>
+
+            <select class="selector font-family-selector">
+                <option value="">hello</option>
+                <option >HELLO</option>
+            </select>
+
+            <select class="selector font-size-selector">
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+               
+            </select>
+
+
+            <div class="material-icons menu-icon icon-underline style-icon">format_underline</div>
+            <div class="material-icons menu-icon icon-bold style-icon">format_bold</div>
+            <div class="material-icons menu-icon icon-italic style-icon">format_italic</div>
+         
+            <div class="material-icons menu-icon icon-align-left selected align-icon">format_align_left</div>
+            <div class="material-icons menu-icon icon-align-right align-icon">format_align_right</div>
+            <div class="material-icons menu-icon icon-align-center align-icon">format_align_center</div>
+            
+        </div>
+
+
+        <div class="formula-bar">
+            <div class="formula-editor selected-cell" contenteditable="true"></div>
+            <div class="function-sign">
+                <b>fx</b>
+            </div>
+            <div class="formula-editor formula-input" contenteditable="true"></div>
+        </div>
+
+        <div class="data-container">
+            <div class="select-all"></div>
+            <div class="column-name-container">
+                <!-- <div class="column-name " >A</div>
+                <div class="column-name">B</div> -->
+            </div>
+            <div class="row-name-container ">
+              
+                <!-- <div class="row-name">1</div>
+                <div class="row-name">2</div> -->
+              
+            </div>
+            
+            <div class="input-cell-container">
+                <div class="row-cell">
+                    <!-- <div class="input-cell" contenteditable="true"></div>
+                    <div class="input-cell" contenteditable="true"></div> -->
+                </div>
+                <div class="row-cell">
+                    <!-- <div class="input-cell" contenteditable="true"></div>
+                    <div class="input-cell" contenteditable="true"></div> -->
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sheet-bar">
+            <div class="scroller">
+                <div class="material-icons left-arrow">arrow_left</div>
+                <div class="material-icons right-arrow">arrow_right</div>
+            </div>
+
+          
+           <div class="material-icons add-sheet">add_circle</div>
+       
+
+            <div class="sheet-tab-container">
+                <div class="sheet-tab">Sheet1</div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
